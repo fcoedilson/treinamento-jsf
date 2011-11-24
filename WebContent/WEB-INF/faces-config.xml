@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+
+	<managed-bean>
+		<managed-bean-name>pessoaBean</managed-bean-name>
+		<managed-bean-class>br.org.ce.fortaleza.cti.treinamento.bean.PessoaBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<navigation-rule>
+		<display-name>pages/index</display-name>
+		<from-view-id>/pages/index.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>cadastrarPessoa</from-outcome>
+			<to-view-id>/pages/pessoa/cadastraPessoa.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>pages/index</display-name>
+		<from-view-id>/pages/index.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>atualizarPessoa</from-outcome>
+			<to-view-id>/pages/pessoa/atualizaPessoa.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>pages/index</display-name>
+		<from-view-id>/pages/index.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>consultarPessoa</from-outcome>
+			<to-view-id>/pages/pessoa/pesquisaPessoa.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>pages/index</display-name>
+		<from-view-id>/pages/index.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>removerPessoa</from-outcome>
+			<to-view-id>/pages/pessoa/removePessoa.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>pages/pessoa/atualizaPessoa</display-name>
+		<from-view-id>/pages/pessoa/atualizaPessoa.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>toIndex</from-outcome>
+			<to-view-id>/pages/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>pages/pessoa/cadastraPessoa</display-name>
+		<from-view-id>/pages/pessoa/cadastraPessoa.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>toIndex</from-outcome>
+			<to-view-id>/pages/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>pages/pessoa/pesquisaPessoa</display-name>
+		<from-view-id>/pages/pessoa/pesquisaPessoa.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>toIndex</from-outcome>
+			<to-view-id>/pages/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>pages/pessoa/removePessoa</display-name>
+		<from-view-id>/pages/pessoa/removePessoa.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>toIndex</from-outcome>
+			<to-view-id>/pages/index.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<validator>
+		<validator-id>emailValidator</validator-id>
+		<validator-class>br.org.ce.fortaleza.cti.treinamento.validador.EmailValidator</validator-class>
+	</validator>
+
+</faces-config>

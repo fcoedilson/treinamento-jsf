@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#pages#index.jsp" PATH="/pages/index.jsp"
+  SHAPE="464,176,50,137" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#index.jsp:0" NAME="item"
+   PATH="/pages/index.jsp" SHAPE="320,110,47,15" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="cadastrarPessoa::#pages#pessoa#cadastraPessoa.jsp" NAME="output"
+    PATH="/pages/pessoa/cadastraPessoa.jsp"
+    TARGET="rules:#pages#pessoa#cadastraPessoa.jsp"
+    TITLE="cadastrarPessoa" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#pages#index.jsp:1" NAME="item1"
+   PATH="/pages/index.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="atualizarPessoa::#pages#pessoa#atualizaPessoa.jsp" NAME="output"
+    PATH="/pages/pessoa/atualizaPessoa.jsp"
+    TARGET="rules:#pages#pessoa#atualizaPessoa.jsp"
+    TITLE="atualizarPessoa" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#pages#index.jsp:2" NAME="item2"
+   PATH="/pages/index.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="consultarPessoa::#pages#pessoa#pesquisaPessoa.jsp" NAME="output"
+    PATH="/pages/pessoa/pesquisaPessoa.jsp"
+    TARGET="rules:#pages#pessoa#pesquisaPessoa.jsp"
+    TITLE="consultarPessoa" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+  <PROCESS-ITEM ID="rules:#pages#index.jsp:3" NAME="item3"
+   PATH="/pages/index.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="removerPessoa::#pages#pessoa#removePessoa.jsp" NAME="output"
+    PATH="/pages/pessoa/removePessoa.jsp"
+    TARGET="rules:#pages#pessoa#removePessoa.jsp" TITLE="removerPessoa" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#pessoa#atualizaPessoa.jsp"
+  PATH="/pages/pessoa/atualizaPessoa.jsp" SHAPE="776,504,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#pessoa#atualizaPessoa.jsp:0"
+   NAME="item" PATH="/pages/pessoa/atualizaPessoa.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="toIndex::#pages#index.jsp" NAME="output"
+    PATH="/pages/index.jsp" TARGET="rules:#pages#index.jsp"
+    TITLE="toIndex" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#pessoa#cadastraPessoa.jsp"
+  PATH="/pages/pessoa/cadastraPessoa.jsp" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#pessoa#cadastraPessoa.jsp:0"
+   NAME="item" PATH="/pages/pessoa/cadastraPessoa.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="toIndex::#pages#index.jsp" NAME="output"
+    PATH="/pages/index.jsp" TARGET="rules:#pages#index.jsp"
+    TITLE="toIndex" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#pessoa#pesquisaPessoa.jsp"
+  PATH="/pages/pessoa/pesquisaPessoa.jsp" SHAPE="40,288,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#pessoa#pesquisaPessoa.jsp:0"
+   NAME="item" PATH="/pages/pessoa/pesquisaPessoa.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="toIndex::#pages#index.jsp" NAME="output"
+    PATH="/pages/index.jsp" TARGET="rules:#pages#index.jsp"
+    TITLE="toIndex" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#pessoa#removePessoa.jsp"
+  PATH="/pages/pessoa/removePessoa.jsp" SHAPE="408,504,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#pessoa#removePessoa.jsp:0" NAME="item"
+   PATH="/pages/pessoa/removePessoa.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="toIndex::#pages#index.jsp" NAME="output"
+    PATH="/pages/index.jsp" TARGET="rules:#pages#index.jsp"
+    TITLE="toIndex" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>
